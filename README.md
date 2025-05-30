@@ -189,6 +189,14 @@ Cheers!
 
 ---
 
+## 📦 Console Version
+
+- Also included is a console version (without index.html or Sinatra requirements)
+- Run the console version using: `ruby tic_tac_toe_console.rb`
+- Follow on-screen directions... moves are made by entering integers 1-9 and pressing Enter/Return
+
+---
+
 ## 📃 License
 
 This project is released under the MIT License.

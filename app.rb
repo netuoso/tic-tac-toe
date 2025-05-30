@@ -36,7 +36,27 @@ post '/play_move' do
   position = request_payload["position"].to_i
   game = current_game
 
-  if !game.valid_move?(position)
+  # Handle special computer-move continuation request
+  if position == -1
+    if game.game_over?
+      return {
+        board: game.board_state,
+        message: game.outcome_message,
+        game_over: true
+      }.to_json
+    end
+
+    game.make_computer_move
+
+    return {
+      board: game.board_state,
+      message: game.game_over? ? game.outcome_message : "Your move!",
+      game_over: game.game_over?
+    }.to_json
+  end
+
+  # Regular player move
+  unless game.valid_move?(position)
     return {
       board: game.board_state,
       message: "Invalid move. Try again.",
@@ -47,19 +67,16 @@ post '/play_move' do
   game.make_human_move(position)
 
   if game.game_over?
-    message = game.outcome_message
     return {
       board: game.board_state,
-      message: message,
+      message: game.outcome_message,
       game_over: true
     }.to_json
   end
 
-  game.make_computer_move
-
   {
     board: game.board_state,
-    message: game.game_over? ? game.outcome_message : "Your move!",
-    game_over: game.game_over?
+    message: "Computer is thinking...",
+    game_over: false
   }.to_json
 end

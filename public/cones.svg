@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <!-- Define the motion path that travels from right to left -->
+  <!-- <path id="motionPath" d="M 160,0 L -160,0" fill="none" stroke="none"/> -->
+  <path id="motionPath" d="M -1500,100 L 3500,100" fill="none" stroke="none"/>
+  <path id="motionPath2" d="M 2000,100 L -1500,100" fill="none" stroke="none"/>
+  <path id="motionPath3" d="M 1500,225 L -1500,225" fill="none" stroke="none"/>
+  <path id="motionPath4" d="M -1000,225 L 2500,225" fill="none" stroke="none"/>
+
+  <path id="secondMotionPath" d="M -1500,100 L 2500,100" fill="none" stroke="none"/>
+  <path id="secondMotionPath2" d="M 2000,100 L -500,100" fill="none" stroke="none"/>
+  <path id="secondMotionPath3" d="M 1500,225 L -500,225" fill="none" stroke="none"/>
+  <path id="secondMotionPath4" d="M -1000,225 L 1500,225" fill="none" stroke="none"/>
+
+  <!-- TEXT WALL 1 -->
+  <text font-size="500" font-family="monospace" fill="black">
+    <textPath xlink:href="#motionPath">
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    </textPath>
+
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="60s" repeatCount="indefinite">
+      <mpath xlink:href="#motionPath"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.5; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 2 -->
+  <text font-size="500" font-family="monospace" fill="black">
+
+    <textPath xlink:href="#motionPath2">
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    </textPath>
+    
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="60s" repeatCount="indefinite">
+      <mpath xlink:href="#motionPath2"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.5; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 3 -->
+  <text font-size="500" font-family="monospace" fill="black">
+    <textPath xlink:href="#motionPath3">
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    </textPath>
+
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="60s" repeatCount="indefinite">
+      <mpath xlink:href="#motionPath3"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.75; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 4 -->
+  <text font-size="500" font-family="monospace" fill="black">
+
+    <textPath xlink:href="#motionPath4">
+      &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
+    </textPath>
+    
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="60s" repeatCount="indefinite">
+      <mpath xlink:href="#motionPath4"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.75; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- SECOND PATH -->
+
+  <!-- TEXT WALL 1 -->
+  <text font-size="250" font-family="monospace" fill="black">
+    <textPath xlink:href="#secondMotionPath">
+      &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    </textPath>
+
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="90s" repeatCount="indefinite">
+      <mpath xlink:href="#secondMotionPath"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.25; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 2 -->
+  <text font-size="250" font-family="monospace" fill="black">
+
+    <textPath xlink:href="#secondMotionPath2">
+      &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    </textPath>
+    
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="90s" repeatCount="indefinite">
+      <mpath xlink:href="#secondMotionPath2"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.25; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 3 -->
+  <text font-size="250" font-family="monospace" fill="black">
+    <textPath xlink:href="#secondMotionPath3">
+      &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    </textPath>
+
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="90s" repeatCount="indefinite">
+      <mpath xlink:href="#secondMotionPath3"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.5; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- TEXT WALL 4 -->
+  <text font-size="250" font-family="monospace" fill="black">
+
+    <textPath xlink:href="#secondMotionPath4">
+      &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+    </textPath>
+
+    <!-- Animate its horizontal movement -->
+    <animateMotion dur="90s" repeatCount="indefinite">
+      <mpath xlink:href="#secondMotionPath4"/>
+    </animateMotion>
+
+    <!-- Animate opacity transition: from 0 to 1 in the middle, back to 0.05 -->
+    <animate attributeName="opacity" values="0; .1; 0" keyTimes="0; 0.5; 1" dur="30s" repeatCount="indefinite"/>
+  </text>
+
+
+</svg>
+
+<!--
+
+### Explanation:
+- A `<path>` (`motionPath`) defines the horizontal movement from off-screen right (`x=120`) to off-screen left (`x=-20`).
+- `<text>` contains multiple `<` symbols to create the vertical wall effect.
+- `<textPath>` binds the text to `motionPath`, making it follow the movement.
+- `<animateMotion>` moves the `<text>` leftwards along the specified `motionPath` continuously.
+- `<animate>` modifies the opacity:
+  - Starts at `0` (completely invisible).
+  - Reaches `1` (fully visible) at the middle (`keyTimes="0.5"`).
+  - Fades to `0.05` before disappearing off-screen.
+
+### Expected Behavior:
+- The text appears outside the right viewport edge.
+- Moves left continuously over `60s`.
+- Opacity transitions from 0 (invisible) to 100% (midway) and fades to 5% near the left edge.
+- Repeats indefinitely.
+
+-->

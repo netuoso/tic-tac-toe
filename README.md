@@ -197,6 +197,12 @@ Cheers!
 
 ---
 
+## 📸 Screenshot
+
+![Console Version Screenshot](tic_tac_toe_console.png)
+
+---
+
 ## 📃 License
 
 This project is released under the MIT License.
